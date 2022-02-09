@@ -1,0 +1,185 @@
+{
+  "uid" : "be2b42aaca2d2d4f",
+  "name" : "Checking user login with different credentials",
+  "fullName" : "User login on the page and redirection: Checking user login with different credentials",
+  "historyId" : "b64a6befd54af46e372338786cad7f4",
+  "time" : {
+    "start" : 1644397333437,
+    "stop" : 1644397338338,
+    "duration" : 4901
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "stepDefinitions.AppHooks.launchBrowser()",
+    "time" : {
+      "start" : 1644397333437,
+      "stop" : 1644397334954,
+      "duration" : 1517
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  The user is on the login page",
+      "time" : {
+        "start" : 1644397334955,
+        "stop" : 1644397336169,
+        "duration" : 1214
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And  The user enters \"nelejakovljevic@gmail.com\" and \"1234567\"",
+      "time" : {
+        "start" : 1644397336170,
+        "stop" : 1644397337111,
+        "duration" : 941
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When  The user clicks submit button",
+      "time" : {
+        "start" : 1644397337112,
+        "stop" : 1644397337626,
+        "duration" : 514
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then  The user should be logged in",
+      "time" : {
+        "start" : 1644397337626,
+        "stop" : 1644397337643,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "stepDefinitions.AppHooks.getScreenshotAllure(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1644397337643,
+      "stop" : 1644397337643,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stepDefinitions.AppHooks.quitBrowser()",
+    "time" : {
+      "start" : 1644397337643,
+      "stop" : 1644397338337,
+      "duration" : 694
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "SIXNS300"
+  }, {
+    "name" : "thread",
+    "value" : "23564@SIXNS300.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "User login on the page and redirection"
+  }, {
+    "name" : "story",
+    "value" : "Checking user login with different credentials"
+  }, {
+    "name" : "suite",
+    "value" : "User login on the page and redirection"
+  }, {
+    "name" : "testClass",
+    "value" : "Checking user login with different credentials"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///C:/Users/njakovljevic/IdeaProjects/PersonalSeleniumProject/src/test/resources/features/login.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.login_feature.User login on the page and redirection"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "1234567"
+  }, {
+    "name" : "username",
+    "value" : "nelejakovljevic@gmail.com"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "be2b42aaca2d2d4f.json",
+  "parameterValues" : [ "1234567", "nelejakovljevic@gmail.com" ]
+}

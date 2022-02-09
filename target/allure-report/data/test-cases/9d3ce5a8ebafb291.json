@@ -1,0 +1,294 @@
+{
+  "uid" : "9d3ce5a8ebafb291",
+  "name" : "Checking user login with different credentials",
+  "fullName" : "User login on the page and redirection: Checking user login with different credentials",
+  "historyId" : "1769f140f6452b33b15e73568d4f1558",
+  "time" : {
+    "start" : 1644397549562,
+    "stop" : 1644397554673,
+    "duration" : 5111
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 7,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "stepDefinitions.AppHooks.launchBrowser()",
+    "time" : {
+      "start" : 1644397549562,
+      "stop" : 1644397551030,
+      "duration" : 1468
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  The user is on the login page",
+      "time" : {
+        "start" : 1644397551030,
+        "stop" : 1644397553061,
+        "duration" : 2031
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "And  The user enters \"nelejakovljevic2@gmail.com\" and \"1234569\"",
+      "time" : {
+        "start" : 1644397553061,
+        "stop" : 1644397553455,
+        "duration" : 394
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When  The user clicks submit button",
+      "time" : {
+        "start" : 1644397553455,
+        "stop" : 1644397553952,
+        "duration" : 497
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then  The user should be logged in",
+      "time" : {
+        "start" : 1644397553953,
+        "stop" : 1644397553966,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "stepDefinitions.AppHooks.getScreenshotAllure(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1644397553966,
+      "stop" : 1644397553966,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stepDefinitions.AppHooks.quitBrowser()",
+    "time" : {
+      "start" : 1644397553967,
+      "stop" : 1644397554673,
+      "duration" : 706
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "SIXNS300"
+  }, {
+    "name" : "thread",
+    "value" : "17200@SIXNS300.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "User login on the page and redirection"
+  }, {
+    "name" : "story",
+    "value" : "Checking user login with different credentials"
+  }, {
+    "name" : "suite",
+    "value" : "User login on the page and redirection"
+  }, {
+    "name" : "testClass",
+    "value" : "Checking user login with different credentials"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///C:/Users/njakovljevic/IdeaProjects/PersonalSeleniumProject/src/test/resources/features/login.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.login_feature.User login on the page and redirection"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "1234569"
+  }, {
+    "name" : "username",
+    "value" : "nelejakovljevic2@gmail.com"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "69c1d8b18ac5ab7b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644397343195,
+        "stop" : 1644397347929,
+        "duration" : 4734
+      }
+    }, {
+      "uid" : "e34566c55355ea67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644397223007,
+        "stop" : 1644397228749,
+        "duration" : 5742
+      }
+    }, {
+      "uid" : "5aa2cb693974e3e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644397075797,
+        "stop" : 1644397080489,
+        "duration" : 4692
+      }
+    }, {
+      "uid" : "ea9c333a87e82191",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644334873504,
+        "stop" : 1644334877874,
+        "duration" : 4370
+      }
+    }, {
+      "uid" : "2fee0e996099dece",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644334601326,
+        "stop" : 1644334605692,
+        "duration" : 4366
+      }
+    }, {
+      "uid" : "98c9c3503287c9f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644330962142,
+        "stop" : 1644330969035,
+        "duration" : 6893
+      }
+    }, {
+      "uid" : "1d7250d7d3dbac82",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644329339031,
+        "stop" : 1644329343416,
+        "duration" : 4385
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "3722fe1273ba1e30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644397343195,
+          "stop" : 1644397347929,
+          "duration" : 4734
+        }
+      }, {
+        "uid" : "9346b86dd13ed2d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644334873504,
+          "stop" : 1644334877874,
+          "duration" : 4370
+        }
+      }, {
+        "uid" : "661829a71c411c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644334601326,
+          "stop" : 1644334605692,
+          "duration" : 4366
+        }
+      }, {
+        "uid" : "18f32cac3dca735f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644330962142,
+          "stop" : 1644330969035,
+          "duration" : 6893
+        }
+      }, {
+        "uid" : "17e94fd232d0eed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644329339031,
+          "stop" : 1644329343416,
+          "duration" : 4385
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9d3ce5a8ebafb291.json",
+  "parameterValues" : [ "1234569", "nelejakovljevic2@gmail.com" ]
+}

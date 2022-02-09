@@ -1,0 +1,161 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Homepage scenarios",
+    "children" : [ {
+      "name" : "Check elements presence after clicking Home Button",
+      "children" : [ {
+        "name" : "Check elements presence after clicking Home Button",
+        "uid" : "893617896d3425e4",
+        "parentUid" : "591ee2ad4a1e3385fa0b0020f8fce406",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644397520321,
+          "stop" : 1644397539308,
+          "duration" : 18987
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 11,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "591ee2ad4a1e3385fa0b0020f8fce406"
+    } ],
+    "uid" : "a37179659703241e9a4b0bf2efca4a84"
+  }, {
+    "name" : "User login on the page and redirection",
+    "children" : [ {
+      "name" : "Checking user login with different credentials",
+      "children" : [ {
+        "name" : "Checking user login with different credentials",
+        "uid" : "aeb643ccf7748ab1",
+        "parentUid" : "6ee10b1fc470098bd6ce97c4c4e424ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644397539508,
+          "stop" : 1644397544095,
+          "duration" : 4587
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 8,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1234567", "nelejakovljevic@gmail.com" ]
+      }, {
+        "name" : "Checking user login with different credentials",
+        "uid" : "727e0bf970c1f857",
+        "parentUid" : "6ee10b1fc470098bd6ce97c4c4e424ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644397544121,
+          "stop" : 1644397549546,
+          "duration" : 5425
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1234568", "nelejakovljevic1@gmail.com" ]
+      }, {
+        "name" : "Checking user login with different credentials",
+        "uid" : "9d3ce5a8ebafb291",
+        "parentUid" : "6ee10b1fc470098bd6ce97c4c4e424ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644397549562,
+          "stop" : 1644397554673,
+          "duration" : 5111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1234569", "nelejakovljevic2@gmail.com" ]
+      }, {
+        "name" : "Checking user login with different credentials",
+        "uid" : "f89d33ffef469d3f",
+        "parentUid" : "6ee10b1fc470098bd6ce97c4c4e424ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644397554692,
+          "stop" : 1644397559620,
+          "duration" : 4928
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1234563", "nelejakovljevic3@gmail.com" ]
+      }, {
+        "name" : "Checking user login with different credentials",
+        "uid" : "adf945edb8918fdf",
+        "parentUid" : "6ee10b1fc470098bd6ce97c4c4e424ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644397559636,
+          "stop" : 1644397564375,
+          "duration" : 4739
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1234564", "nelejakovljevic4@gmail.com" ]
+      }, {
+        "name" : "Checking user login with different credentials",
+        "uid" : "7a16c144650e4d99",
+        "parentUid" : "6ee10b1fc470098bd6ce97c4c4e424ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644397564389,
+          "stop" : 1644397569605,
+          "duration" : 5216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1234562", "nelejakovljevic5@gmail.com" ]
+      } ],
+      "uid" : "6ee10b1fc470098bd6ce97c4c4e424ba"
+    }, {
+      "name" : "Checking redirection from Login to Home page",
+      "children" : [ {
+        "name" : "Checking redirection from Login to Home page",
+        "uid" : "9c9eca7c5c33b28d",
+        "parentUid" : "f475ecc077084ea9ef589c6ffe45b666",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644397569616,
+          "stop" : 1644397574425,
+          "duration" : 4809
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f475ecc077084ea9ef589c6ffe45b666"
+    } ],
+    "uid" : "48a7fdfccf52296b7920a250bdaa4d77"
+  } ]
+}

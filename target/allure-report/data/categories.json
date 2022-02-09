@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\tElement with xpath: //button[@id='currency']f is not displayed on the page!",
+      "children" : [ {
+        "name" : "Check elements presence after clicking Home Button",
+        "uid" : "893617896d3425e4",
+        "parentUid" : "5a6f3b2c9a93307fd412806d4f79dd57",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644397520321,
+          "stop" : 1644397539308,
+          "duration" : 18987
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 11,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5a6f3b2c9a93307fd412806d4f79dd57"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

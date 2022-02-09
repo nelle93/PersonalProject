@@ -1,0 +1,164 @@
+{
+  "uid" : "7b85eb2c6c5abcb8",
+  "name" : "Check elements presence after clicking Home Button",
+  "fullName" : "Homepage scenarios: Check elements presence after clicking Home Button",
+  "historyId" : "b3bc1a75acccb75ef4340b528d6f0783",
+  "time" : {
+    "start" : 1644334809610,
+    "stop" : 1644334818487,
+    "duration" : 8877
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "stepDefinitions.AppHooks.launchBrowser()",
+    "time" : {
+      "start" : 1644334809613,
+      "stop" : 1644334812094,
+      "duration" : 2481
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  The user is on the home page",
+      "time" : {
+        "start" : 1644334812099,
+        "stop" : 1644334815292,
+        "duration" : 3193
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When  The user navigates to the Home button",
+      "time" : {
+        "start" : 1644334815294,
+        "stop" : 1644334816923,
+        "duration" : 1629
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then  All elements should be present",
+      "time" : {
+        "start" : 1644334816924,
+        "stop" : 1644334817769,
+        "duration" : 845
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "stepDefinitions.AppHooks.getScreenshotAllure(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1644334817769,
+      "stop" : 1644334817770,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stepDefinitions.AppHooks.quitBrowser()",
+    "time" : {
+      "start" : 1644334817771,
+      "stop" : 1644334818486,
+      "duration" : 715
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "SIXNS300"
+  }, {
+    "name" : "thread",
+    "value" : "21856@SIXNS300.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Homepage scenarios"
+  }, {
+    "name" : "story",
+    "value" : "Check elements presence after clicking Home Button"
+  }, {
+    "name" : "suite",
+    "value" : "Homepage scenarios"
+  }, {
+    "name" : "testClass",
+    "value" : "Check elements presence after clicking Home Button"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///C:/Users/njakovljevic/IdeaProjects/basicdemoproject-master/src/test/resources/features/homepage.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.homepage_feature.Homepage scenarios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7b85eb2c6c5abcb8.json",
+  "parameterValues" : [ ]
+}

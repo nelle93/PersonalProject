@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Personal Project Tests" parallel="methods" thread-count="2">
+    <test name= "Parallel tests" >
+        <classes>
+            <class name="testRunner.Runner"/>
+        </classes>
+    </test>
+</suite>

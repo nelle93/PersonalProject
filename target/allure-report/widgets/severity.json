@@ -1,0 +1,81 @@
+[ {
+  "uid" : "9c9eca7c5c33b28d",
+  "name" : "Checking redirection from Login to Home page",
+  "time" : {
+    "start" : 1644397569616,
+    "stop" : 1644397574425,
+    "duration" : 4809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aeb643ccf7748ab1",
+  "name" : "Checking user login with different credentials",
+  "time" : {
+    "start" : 1644397539508,
+    "stop" : 1644397544095,
+    "duration" : 4587
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a16c144650e4d99",
+  "name" : "Checking user login with different credentials",
+  "time" : {
+    "start" : 1644397564389,
+    "stop" : 1644397569605,
+    "duration" : 5216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "727e0bf970c1f857",
+  "name" : "Checking user login with different credentials",
+  "time" : {
+    "start" : 1644397544121,
+    "stop" : 1644397549546,
+    "duration" : 5425
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d3ce5a8ebafb291",
+  "name" : "Checking user login with different credentials",
+  "time" : {
+    "start" : 1644397549562,
+    "stop" : 1644397554673,
+    "duration" : 5111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f89d33ffef469d3f",
+  "name" : "Checking user login with different credentials",
+  "time" : {
+    "start" : 1644397554692,
+    "stop" : 1644397559620,
+    "duration" : 4928
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "893617896d3425e4",
+  "name" : "Check elements presence after clicking Home Button",
+  "time" : {
+    "start" : 1644397520321,
+    "stop" : 1644397539308,
+    "duration" : 18987
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "adf945edb8918fdf",
+  "name" : "Checking user login with different credentials",
+  "time" : {
+    "start" : 1644397559636,
+    "stop" : 1644397564375,
+    "duration" : 4739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

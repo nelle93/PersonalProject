@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "1d1e5a47a6748df014e5a0f600d587cc",
+    "name" : "Homepage scenarios",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "762d2644f2706bcdab298e9b9bdbfb9f",
+    "name" : "User login on the page and redirection",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  } ]
+}
