@@ -1,4 +1,0 @@
-"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","User login on the page and redirection","Checking redirection from Login to Home page","0","0","1","0","0"
-"","User login on the page and redirection","Checking user login with different credentials","0","0","6","0","0"
-"","Homepage scenarios","Check elements presence after clicking Home Button","1","0","0","0","0"
