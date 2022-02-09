@@ -14,35 +14,35 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 
-public class ReportingUtil {
+public class AllureReportingUtils {
 
     static final String ProjectPath = "C:/Users/njakovljevic/IdeaProjects/PersonalSeleniumProject/";
     static final String ResultPath = "target/allure-results";
     static final String ReportPath = "target/allure-report";
     static final File dirFrom = new File(ProjectPath + ReportPath + "/history");
-    static final File dirTo = new File(ProjectPath + ResultPath + "/history");
+    static final File dirTo = new File(ProjectPath + ResultPath);
+    static final File dirToHistory = new File(ProjectPath + ResultPath + "/history");
 
     public static void main() throws InterruptedException, IOException {
         if (dirFrom.exists() && dirTo.exists()) {
-            Thread.sleep(1000);
             moveFile();
-            Thread.sleep(1000);
+            Thread.sleep(300);
+            AllureEnvironmentSetup.main();
+            Thread.sleep(300);
             generateAllureReport();
         } else if (dirTo.exists() && !dirFrom.exists()) {
             generateAllureReport();
-            Thread.sleep(1000);
+            Thread.sleep(300);
             moveFile();
         }
-
     }
 
 
     public static void moveFile() throws IOException {
 
-           FileUtils.copyDirectory(dirFrom, dirTo);
+           FileUtils.copyDirectory(dirFrom, dirToHistory);
 
     }
-
     public static void generateAllureReport() throws IOException {
 
         ProcessBuilder builder = new ProcessBuilder(

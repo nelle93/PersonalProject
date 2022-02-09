@@ -9,7 +9,6 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import utility.BrowserDriverFactory;
-import utility.ReportingUtil;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
