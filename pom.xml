@@ -17,7 +17,7 @@
         <testng.version>7.5</testng.version>
         <webdriver.manager.version>5.0.3</webdriver.manager.version>
         <slf4j.version>1.7.32</slf4j.version>
-        <selenium.java.version>4.1.1</selenium.java.version>
+        <selenium.java.version>4.1.2</selenium.java.version>
         <cucumber.java.version>7.2.3</cucumber.java.version>
         <cucumber.core.version>7.2.3</cucumber.core.version>
         <cucumber.testng.version>7.2.3</cucumber.testng.version>
@@ -38,6 +38,12 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>${webdriver.manager.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>

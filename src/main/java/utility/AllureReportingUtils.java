@@ -20,8 +20,8 @@ public class AllureReportingUtils {
     public static void main() throws InterruptedException, IOException {
         if (dirFrom.exists() && dirTo.exists()) {
             moveFile();
-            Thread.sleep(300);
-            AllureEnvironmentSetup.main();
+            //Thread.sleep(300);
+            //AllureEnvironmentSetup.main();
             Thread.sleep(300);
             generateAllureReport();
         } else if (dirTo.exists() && !dirFrom.exists()) {

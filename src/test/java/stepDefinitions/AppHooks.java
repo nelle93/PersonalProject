@@ -8,6 +8,7 @@ import pageResources.GeneralResources;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
+import utility.AllureEnvironmentSetup;
 import utility.BrowserDriverFactory;
 
 import java.io.ByteArrayInputStream;
@@ -20,7 +21,7 @@ public class AppHooks {
     public void launchBrowser() {
         BrowserDriverFactory browserDriverFactory = new BrowserDriverFactory();
         driver = browserDriverFactory.init_driver(GeneralResources.browserName.getResource());
-
+        AllureEnvironmentSetup.main();
     }
     @After(order = 1)
     public void quitBrowser(){
