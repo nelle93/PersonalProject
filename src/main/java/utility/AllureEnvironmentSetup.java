@@ -1,6 +1,5 @@
 package utility;
 
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.FileOutputStream;
@@ -10,7 +9,6 @@ import java.util.Properties;
 
 public class AllureEnvironmentSetup {
    private static final Properties properties = new Properties();
-   private static final ChromeOptions options = new ChromeOptions();
 
     public static String browserName() {
        return ((RemoteWebDriver) BrowserDriverFactory.getDriver()).getCapabilities().getBrowserName();
