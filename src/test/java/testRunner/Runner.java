@@ -4,6 +4,7 @@ package testRunner;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.DataProvider;
 import utility.AllureReportingUtils;
 import java.io.IOException;
 
