@@ -17,26 +17,30 @@ import java.io.IOException;
 public class AppHooks {
     private WebDriver driver;
 
-    @Before
+    @Before(order = 0)
     public void launchBrowser() {
         BrowserDriverFactory browserDriverFactory = new BrowserDriverFactory();
         driver = browserDriverFactory.init_driver(GeneralResources.browserName.getResource());
-        AllureEnvironmentSetup.main();
+
+    }
+    @Before(order = 1)
+    public void getEnvironmentValues () {
+        AllureEnvironmentSetup.readEnvironmentValues();
     }
     @After(order = 1)
-    public void quitBrowser(){
 
-        driver.quit();
-    }
-    @After(order = 2)
-
-        public void getScreenshotAllure(Scenario scenario) throws InterruptedException, IOException, IllegalMonitorStateException
+        public void getScreenshotAllure(Scenario scenario) throws IllegalMonitorStateException
         {
             if(scenario.isFailed())
             {
                 Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
             }
         }
+    @After(order = 0)
+    public void quitBrowser(){
+
+        driver.quit();
+    }
 
 
 }

@@ -13,7 +13,7 @@ public enum HomePageResources {
     SearchButton("//form[@id='hotels-search']//button[@id='submit']"),
     LanguagesButton("//button[@id='languages']"),
     CurrencyButton("//button[@id='currency']"),
-    SupplierButton("//button[@id='supplier']"),
+    SupplierButton("//button[@id='supplier']f"),
     AgentsButton("//button[@id='agents']");
 
     private final String resource;
