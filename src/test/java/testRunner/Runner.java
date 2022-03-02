@@ -11,7 +11,7 @@ import java.io.IOException;
 @CucumberOptions(
         plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
         features = "src/test/resources/features/",
-        glue = {"stepDefinitions"},
+        glue = {"stepDefinitions","hooksSetup"},
         monochrome = true
 )
 

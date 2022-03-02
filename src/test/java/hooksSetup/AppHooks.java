@@ -1,4 +1,4 @@
-package stepDefinitions;
+package hooksSetup;
 
 import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
@@ -10,9 +10,8 @@ import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import utility.AllureEnvironmentSetup;
 import utility.BrowserDriverFactory;
-
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
+
 
 public class AppHooks {
     private WebDriver driver;
@@ -23,10 +22,12 @@ public class AppHooks {
         driver = browserDriverFactory.init_driver(GeneralResources.browserName.getResource());
 
     }
+
     @Before(order = 1)
     public void getEnvironmentValues () {
         AllureEnvironmentSetup.readEnvironmentValues();
     }
+
     @After(order = 1)
 
         public void getScreenshotAllure(Scenario scenario) throws IllegalMonitorStateException

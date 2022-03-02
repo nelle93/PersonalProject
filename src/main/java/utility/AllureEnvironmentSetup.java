@@ -11,10 +11,12 @@ public class AllureEnvironmentSetup {
    private static final Properties properties = new Properties();
 
     private static String browserName() {
-       return ((RemoteWebDriver) BrowserDriverFactory.getDriver()).getCapabilities().getBrowserName();
+
+            return ((RemoteWebDriver) BrowserDriverFactory.getDriver()).getCapabilities().getBrowserName();
     }
     private static String browserVersion() {
-        return  ((RemoteWebDriver)BrowserDriverFactory.getDriver()).getCapabilities().getBrowserVersion();
+
+            return ((RemoteWebDriver)BrowserDriverFactory.getDriver()).getCapabilities().getBrowserVersion();
     }
     private static String operatingSystem () {
         return System.getProperty("os.name");

@@ -27,13 +27,13 @@ public abstract class PageFunctions {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
 
     }
-    protected void setTimeoutTo5() {
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    protected WebDriverWait setTimeoutToCustomSeconds(int dur) {
+        return new WebDriverWait(driver, Duration.ofSeconds(dur));
     }
 
-    protected void waitIsDisplayed(String locator) {
+    protected boolean waitIsDisplayed(String locator) {
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+        return setTimeoutToCustomSeconds(5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).isDisplayed();
 
     }
 
@@ -82,11 +82,12 @@ public abstract class PageFunctions {
     }
     protected  void checkIfAllElementsAreDisplayed (List<String> allElements, SoftAssert softAssert) {
        for (String el : allElements) {
-             WebElement element;
+
 
            try {
-               element = waitIsPresent(el);
-             softAssert.assertTrue(element.isDisplayed());
+
+             softAssert.assertTrue(waitIsDisplayed(el));
+
 
 
            } catch (NoSuchElementException | TimeoutException e) {

@@ -4,7 +4,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class BrowserDriverFactory {
@@ -22,13 +24,17 @@ public class BrowserDriverFactory {
                 WebDriverManager.chromedriver().setup();
                 tlDriver.set(new ChromeDriver());
                 break;
+            case "edge":
+                WebDriverManager.edgedriver().setup();
+                tlDriver.set(new EdgeDriver());
+                break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 tlDriver.set(new FirefoxDriver());
                 break;
-            case "safari":
-                WebDriverManager.safaridriver().setup();
-                tlDriver.set(new SafariDriver());
+            case "ie":
+                WebDriverManager.iedriver().setup();
+                tlDriver.set(new InternetExplorerDriver());
                 break;
             case "headless":
                 ChromeOptions options = new ChromeOptions();
