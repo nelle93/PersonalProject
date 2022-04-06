@@ -20,18 +20,18 @@ public class LoginPage extends PageFunctions {
 
     }
     public void enterCredentials (String mailText, String passText) {
-        inputText(LoginResources.inputMail.getResource(), mailText);
-        inputText(LoginResources.inputPassword.getResource(), passText);
+        inputText(LoginResources.InputMail.getResource(), mailText);
+        inputText(LoginResources.InputPassword.getResource(), passText);
 
     }
     public void clickLogin () {
-        clickElement(LoginResources.loginButton.getResource());
+        clickElement(LoginResources.LoginButton.getResource());
     }
     public void checkLoginUrl () {
         Assert.assertEquals(driver.getCurrentUrl(), GeneralResources.loginPageUrlFailedLogin.getResource());
     }
     public void clickHomeButton () {
-        clickElement(LoginResources.homeButton.getResource());
+        clickElement(LoginResources.HomeButton.getResource());
     }
 
     public HomePage checkHomePageRedirection () {

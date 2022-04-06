@@ -5,9 +5,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
-
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
+
 
 
 public abstract class PageFunctions {
@@ -27,19 +28,33 @@ public abstract class PageFunctions {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
 
     }
-    protected WebDriverWait setTimeoutToCustomSeconds(int dur) {
+    protected WebDriverWait waitTimeoutToCustomSeconds(int dur) {
         return new WebDriverWait(driver, Duration.ofSeconds(dur));
     }
+    protected WebElement waitIsDisplayed (String locator) {
 
-    protected boolean waitIsDisplayed(String locator) {
+       return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+    }
 
-        return setTimeoutToCustomSeconds(5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).isDisplayed();
+    protected List<WebElement> waitForAllElPresence (String locator) {
+
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(locator)));
+    }
+
+    protected boolean waitAndCheckIsVisibleFive(String locator) {
+
+        return waitTimeoutToCustomSeconds(5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).isDisplayed();
+
+    }
+    protected boolean waitAndCheckIsVisibleTen(String locator) {
+
+        return waitTimeoutToCustomSeconds(10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).isDisplayed();
 
     }
 
-    protected void waitIsClickable(String locator) {
+    protected WebElement waitIsClickable(String locator) {
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 
     }
 
@@ -52,16 +67,12 @@ public abstract class PageFunctions {
     }
 
     protected void clickElement(String locator) {
-        waitIsClickable(locator);
-        driver.findElement(By.xpath(locator)).click();
-
+        waitIsClickable(locator).click();
     }
 
 
     protected void inputText(String locator, String text) {
-        WebElement element = waitIsPresent(locator);
-        waitIsClickable(locator);
-        element.sendKeys(text);
+        waitIsClickable(locator).sendKeys(text);
     }
 
     protected void isTextEqual(String locator, String expectedText) {
@@ -80,13 +91,13 @@ public abstract class PageFunctions {
         waitIsPresent(locator);
         driver.findElement(By.xpath(locator)).getText();
     }
-    protected  void checkIfAllElementsAreDisplayed (List<String> allElements, SoftAssert softAssert) {
+    protected void checkIfAllElementsAreDisplayed (List<String> allElements, SoftAssert softAssert) {
        for (String el : allElements) {
 
 
            try {
 
-             softAssert.assertTrue(waitIsDisplayed(el));
+           softAssert.assertTrue(waitAndCheckIsVisibleFive(el));
 
 
 
@@ -96,5 +107,21 @@ public abstract class PageFunctions {
        }
        softAssert.assertAll();
    }
+   protected List<String> listaListaMnogo (List<String> lst, String text) {
+        List<String> new_lst = new ArrayList<>();
+       for(String el: lst) {
+           if (el.contains(text)) {
+              new_lst.add(el);
+           }
+       }
+       return new_lst;
+   }
+   protected void scrollToElement (String locator) {
+       ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", waitIsClickable(locator));
+   }
 
 }
+
+
+
+

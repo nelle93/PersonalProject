@@ -43,6 +43,5 @@ public class LoginSteps {
     @Then("The user should be redirected to the Home page")
     public void theUserShouldBeRedirectedToTheHomePage() {
         homePage = loginPage.checkHomePageRedirection();
-
     }
 }

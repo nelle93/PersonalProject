@@ -5,6 +5,7 @@ public enum GeneralResources {
     browserName("chrome"),
     loginUrl("https://www.phptravels.net/login"),
     homePageUrl("https://www.phptravels.net/"),
+    WomenStoreUrl("http://automationpractice.com/index.php"),
     loginPageUrlFailedLogin("https://www.phptravels.net/login/failed");
 
     private final String resource;

@@ -30,7 +30,6 @@ public class AllureEnvironmentSetup {
 
         try (OutputStream outputStream = new FileOutputStream("target/allure-results/environment.properties")) {
 
-
             properties.store(outputStream, null);
         }
         catch (IOException e){

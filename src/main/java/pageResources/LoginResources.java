@@ -2,12 +2,10 @@ package pageResources;
 
 public enum LoginResources {
 
-    loginButton("//span[text()='Login']/parent::button"),
-    inputMail("//input[@placeholder='Email']"),
-    inputPassword("//input[@placeholder='Password']"),
-    homeButton("//a[normalize-space()='Home']");
-
-
+    LoginButton("//span[text()='Login']/parent::button"),
+    InputMail("//input[@placeholder='Email']"),
+    InputPassword("//input[@placeholder='Password']"),
+    HomeButton("//a[normalize-space()='Home']");
 
     private final String resource;
 
